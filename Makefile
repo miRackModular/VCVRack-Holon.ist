@@ -1,3 +1,5 @@
+V1_COMPAT=1
+
 RACK_DIR ?= ../..
 
 FLAGS +=
@@ -15,7 +17,7 @@ endif
 SOURCES += $(wildcard src/*.cpp)
 SOURCES += $(wildcard src/*.c)
 
-DISTRIBUTABLES += $(wildcard LICENSE*) $(wildcard *.sh) $(wildcard *.bat) res demos 
+DISTRIBUTABLES += $(wildcard LICENSE*) res
 
 # Include the VCV Rack plugin Makefile framework
 include $(RACK_DIR)/plugin.mk
