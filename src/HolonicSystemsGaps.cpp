@@ -140,7 +140,7 @@ struct HolonicSystemsGapsModule : Module {
 					}
 					if (trigMode) {
 						if (on) {
-							pulses[i].trigger(1e-3);
+							pulses[i].trigger();
 						}
 						outputs[OUTPUT_1+i].value = pulses[i].process(deltaTime) ? 10.0 : 0.0;
 						lights[LED_1+i].setSmoothBrightness(outputs[OUTPUT_1+i].value, APP->engine->getSampleTime());

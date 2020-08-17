@@ -219,7 +219,7 @@ struct HolonicSystemsLazySusanModule : Module {
 							currentCVs[i] = newValue;
 							outputs[OUTPUT_CV_1+i].value = currentCVs[i];
 							//trigger
-							outputTriggers[i].trigger(1e-3);
+							outputTriggers[i].trigger();
 						}
 					}
 				}

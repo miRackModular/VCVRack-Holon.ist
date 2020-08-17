@@ -232,9 +232,9 @@ struct HolonicSystemsDumbwaiterModule : Module {
 				//trigger
 				if ((inputs[IN_CLOCK].active && clock) || counter != oldCounter){
 					if (params[PARAM_TRIG_1+i].value == 1){
-						outputTrigger1.trigger(1e-3);
+						outputTrigger1.trigger();
 					} else if (params[PARAM_TRIG_1+i].value == 2){
-						outputTrigger2.trigger(1e-3);
+						outputTrigger2.trigger();
 					}
 				}
 			}
